@@ -4,66 +4,119 @@
   <head>
     <title>madx.github.com</title>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <style type="text/css">
+    <style type="text/css" media="screen">
+      /* <![CDATA[ */
       body {
-        margin: 0;
-        background: white;
-        color: #333;
-        font: normal 0.9em "trebuchet ms" sans-serif;
-      }
-      #main {
-        width: 80%;
-      }
-      #side {
-        position: absolute;
-        left: 2%;
-      }
-      #content {
-        position: absolute;
-        width: 50%;
-        left: 10%;
-        top: 2%;
-        padding: 1% 2% 2%;
-      }
-      #content ul { 
-        margin-top: 0; 
-        border-bottom: 3px solid #ccc;
-      }
-      #content li {
-        list-style-type: none;
-        font-size: 3em;
-        font-weight: bold;
-        line-height: 200%;
-      }
-      #content a {
-        color: black;
-        text-decoration: none;
-        padding: 2px;
-      }
-      #content a:hover {
-        color: white;
         background-color: black;
+        color: #333;
+        width: 40%;
+        margin: 0 auto 1%;
+        font-family: sans-serif;
+        font-size: 0.9em;
+        line-height: 160%;
       }
+
+      a:link, a:visited { 
+        color: white; 
+        text-decoration: none;
+        padding: 1px 2px;
+        font-weight: bold;
+      }
+      a:hover, a:active, a:focus {
+        background-color: #222;
+        color: white;
+      }
+
+      h1 {
+        background-color: #222;
+        color: #efefef;
+        margin: 0;
+        padding: 1em 0.5em;
+      }
+
+      h2, #footer {
+        background-color: #444;
+        color: #efefef;
+        margin: 0;
+        padding: 0.7em 0.5em;
+      }
+
+      #footer {
+        text-align: center;
+        font-size: 0.9em;
+      }
+
+      dl {
+        list-style-type: none;
+        margin: 0;
+        padding: 1em 0.5em;
+        color: #ccc;
+        background-color: #666;
+      }
+
+      dd {
+        margin: 0.1em 1.5em 0.5em;
+      }
+      /* ]]> */
     </style>
   </head>
 
   <body>
-    <div id="main">
 
-      <div id="side">
-        <img src="logo.png" alt="madx.github.com" />
-      </div>
+    <h1>madx on github</h1>
 
-      <ul id="content">
-        <li>
-          <a href="http://yapok.org/" title="My blog">blog</a>
-        </li>
-        <li>
-          <a href="http://github.com/madx"
-            title="My open source projects">code</a>
-        </li>
-      </ul>
+    <h2>active projects</h2>
 
-    </div>
+    <dl>
+      <dt>
+        <a href="http://github.com/madx/honk" 
+          title="Honk project page">honk</a>
+      </dt>
+      <dd>
+        a blogging engine powered by sinatra and yaml files
+      </dd>
+
+      <dt>
+        <a href="http://github.com/madx/rackable"
+           title="Rackable project page">rackable</a>
+      </dt>
+      <dd>
+        A tiny module that aims to provide a REST-like interface 
+        to any Ruby object
+      </dd>
+    </dl>
+
+    <h2>elsewhere…</h2>
+
+    <dl>
+      <dt>
+        <a href="http://yapok.org/" title="My blog">Yapok.org</a>
+      </dt>
+      <dd>
+        My blog about Ruby, programming and various other stuff.
+      </dd>
+
+      <dt>
+        <a href="http://twitter.com/madx" title="My Twitter">Twitter</a>
+      </dt>
+      <dd>
+        My Twitter account, most twits are in french but technical ones
+        are in english.
+      </dd>
+
+      <dt>
+        <a href="irc://irc.freenode.net"
+           title="Freenode IRC network">Freenode</a>
+      </dt>
+      <dd>
+        I can be found on various channels on the Freenode IRC network, mainly:
+        <kbd>#ruby.fr</kbd>, <kbd>#rubyonrails.fr</kbd>, <kbd>#sinatra.fr</kbd>.
+      </dd>
+    </dl>
+
+    <p id="footer">
+      © madx 2009
+    </p>
+
   </body>
 </html>
