@@ -7,7 +7,7 @@
   <style type="text/css" media="screen">
     /* <![CDATA[ */
     body {
-      background-color: black;
+      background-color: #00000f;
       color: #333;
       width: 40%;
       min-width: 600px;
@@ -18,25 +18,33 @@
     }
 
     a:link, a:visited {
-      color: white;
+      color: #cff;
       text-decoration: none;
-      padding: 1px 2px;
+      padding: 1px 4px;
       font-weight: bold;
     }
     a:hover, a:active, a:focus {
-      background-color: #222;
-      color: white;
+      background-color: #00000f;
+      color: #efefef;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
     }
 
     h1 {
-      background-color: #222;
+      background-color: #036;
+      -moz-border-radius: 12px 12px 0 0;
+      -webkit-border-radius: 12px 12px 0 0;
       color: #efefef;
       margin: 0;
-      padding: 1em 0.5em;
+      padding: 0.6em 0.5em 0.8em;
+      font-family: palatino, serif;
+      font-size: 3em;
+      font-style: italic;
+      line-height: 0em;
     }
 
     h2, #footer {
-      background-color: #444;
+      background-color: #069;
       color: #efefef;
       margin: 0;
       padding: 0.7em 0.5em;
@@ -45,14 +53,16 @@
     #footer {
       text-align: center;
       font-size: 0.9em;
+      -moz-border-radius: 0 0 12px 12px;
+      -webkit-border-radius: 0 0 12px 12px;
     }
 
     dl {
       list-style-type: none;
       margin: 0;
       padding: 1em 0.5em;
-      color: #ccc;
-      background-color: #666;
+      color: #00000f;
+      background-color: #39c;
     }
 
     dd {
@@ -63,7 +73,6 @@
 </head>
 
 <body>
-
   <h1>madx on github</h1>
 
   <h2>active projects</h2>
@@ -71,7 +80,7 @@
   <dl>
     <dt>
       <a href="http://github.com/madx/honk"
-        title="Honk project page">honk</a>
+         title="Honk project page">honk</a>
     </dt>
     <dd>
       a blogging engine powered by sinatra and yaml files
@@ -118,6 +127,5 @@
   <p id="footer">
     © madx 2009
   </p>
-
 </body>
 </html>
